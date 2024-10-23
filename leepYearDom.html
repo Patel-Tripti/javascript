@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            text-align: center;
+            margin: auto;
+
+        }
+        p{
+            width: 150px;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+            margin: auto;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <br><br>
+        <input type="number" placeholder="Enter the year" id="in1" ><br><br>
+        <button onclick="leep()" type="button"> check </button><br><br>
+        <p id="pera"> </p>
+    </div>
+    <script>
+        function leep(){
+         let year = document.getElementById("in1").value;
+         if(year%4==0 && year%100 != 0){
+   
+        let ans = document.getElementById("pera");
+        ans.innerHTML=("This is a leep year")
+       }
+       else if(year%400 ==0){
+    
+    let ans = document.getElementById("pera");
+        ans.innerHTML=("This is a century year")
+       }
+       else{
+       
+        let ans= document.getElementById("pera");
+        ans.innerHTML=("This is a century year")
+       }}
+    </script>
+</body>
+</html>

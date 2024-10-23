@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            text-align: center;
+            margin: auto;
+            background-color: rgb(149, 209, 183);
+        }
+        p{
+            width: 250px;
+            height: 30px;
+            border: 1px solid black;
+            text-align: center;
+            margin: auto;
+            padding-top: 20px;
+            font-size: 19px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <br>
+        <h1>Prime Number<h1>
+        <input type="number" placeholder="Enter the number" id="in1" ><br>
+        <button onclick="prime()" type="button"> check </button><br> <br>
+        <p id="pera"> </p>
+    </div>
+    <script>
+
+        function prime(){
+        let count =0;
+        let  a =document.getElementById("in1").value;
+       for(i=2;i<=a;i++){
+         if(a%i==0){
+        count++;
+         }
+       }
+       if(count == 1){
+    //   console.log("Prime number ");
+        let b = document.getElementById("pera")
+        b.innerHTML=("Prime Number");
+       }else{
+        let b = document.getElementById("pera")
+        b.innerHTML=("Not Prime Number");
+       }}
+    </script>
+</body>
+</html>

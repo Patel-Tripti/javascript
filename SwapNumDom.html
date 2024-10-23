@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <div id = div1>
+    <br><br>
+   a = <input type="number" placeholder="enter number for a" id="num1"> <br><br>
+   b = <input type="number" placeholder="enter number for b" id="num2"><br><br>
+   <h3>Swaping</h3>
+   <button type="submit" onclick="swap()">Submit</button>
+   </div>
+
+    <script>
+        function swap(){
+
+        let a = parseInt(document.getElementById("num1").value);
+
+        let b = parseInt(document.getElementById("num2").value);
+        a= b+a;
+        b = a-b;
+        a= a-b;
+
+        document.write(" a = "+a);  
+       document.write("b = "+ b);
+    }
+    </script>
+</body>
+</html>
