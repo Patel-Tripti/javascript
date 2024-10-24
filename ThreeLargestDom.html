@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            color: white;
+            width: 300px;
+            height: 300px;
+            border: 2px solid rgba(255, 255, 255, 0.908);
+            text-align: center;
+            margin: auto;
+            background-color: rgb(167, 177, 173);
+        }
+        p{
+            width: 250px;
+            height: 30px;
+            border: 1px solid white;
+            text-align: center;
+            margin: auto;
+            padding-top:10px;
+            font-size: 19px;
+            color: white;
+        }button{
+            color: white;
+            background-color: transparent;
+            border: 2px solid white;
+            width: 100px;
+            height: 30px;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="div1">
+       
+       <h2> Check Largest Number</h2>
+        <input type="number" placeholder="Please enter the first number" id="in1"></input> <br><br>
+        <input type="number" placeholder="Please enter the secound number" id="in2"></input> <br><br>
+        <input type="number" placeholder="Please enter the third number" id="in3"></input> <br><br>
+        <button onclick="checkLargestNum()" type="submit">Result</button> <br><br>
+        <p id="pera"></p>
+    </div>
+     
+    <script>
+        function checkLargestNum(){
+        let a = document.getElementById("in1").value;
+        let b = document.getElementById("in2").value;
+        let c = document.getElementById("in3").value;
+
+        if(a>b && a>c){
+         let ans = document.getElementById("pera")
+         ans. innerHTML=("a is the largest number")
+        }
+        else if(b>a && b>c){
+            let ans1 = document.getElementById("pera")
+         ans1. innerHTML=("b is the largest number")
+        }
+        else{
+            let ans2 = document.getElementById("pera")
+         ans2. innerHTML=("c is the largest number")
+        }
+
+        }
+    </script>
+</body>
+</html>
