@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background: border-box;
+            background-color: black;
+        }
+        .main{
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            margin: 50px auto;
+            background-color: #ffffffec;
+            box-shadow: rgba(212, 209, 209, 0.963) 0px 5px 15px;
+        }
+        button{
+            width: 80px;
+            height: 30px;
+            margin: 50px 60px;
+            background-color: transparent;
+            border-radius: 10px;
+            font-size: 22px;
+            box-shadow: black 0px 3px 8px;
+        }
+        h2{
+            background-color: transparent;
+            color: black;
+            padding-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>Watch the time</h3>
+      
+        <button onclick="fun()">Click</button>
+    </div>
+
+
+    <script>
+      function fun(){
+        let a = new Date();
+        document.write(a.toLocaleTimeString());
+      }
+    </script>
+</body>
+</html>
