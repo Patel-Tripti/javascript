@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Assigning a function in a variable
+// let a = function(){
+//     console.log("This is my First class function");
+// }
+// a();
+
+//passing a function as an argument
+// function a(){
+//     return "this is function"
+// }
+// function m(fun, name){
+// console.log(fun(),name);
+// }
+// m(a,"monika");
+
+//Returning a function to another function
+
+function b(){
+    return function c(){
+        console.log("This is function c");
+    }
+}
+// b()();  
+ //  we can use one another method
+ let x = b();
+ x();
+
+
+    </script>
+</body>
+</html>
+
