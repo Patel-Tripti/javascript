@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- . Write a program to toggle case of each character of a string. -->
+    <script>
+        let str = "JavaSCript";
+        let newStr = "";
+        console.log(str);
+        for (i = 0; i <= str.length; i++) {
+            if (str.charAt(i) >= 'a' && str.charAt(i) <= 'z') {
+                let a = str.charAt(i).toUpperCase();
+                newStr += a;
+
+            }
+            else {
+                let b = str.charAt(i).toLowerCase();
+                newStr += b;
+            }
+        }
+
+        console.log(newStr);
+    </script>
+</body>
+
+</html>
