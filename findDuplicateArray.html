@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var arr = [6,7,4,5,6,8,4,4];
+        // var element = 0, num =0;
+        // for(i =0;i<arr.length;i++){
+        //     var count =0;
+        //   for(j=0;j<arr.length;j++){
+        //      if(arr[i]==arr[j]){
+        //       count++;
+        //      }
+        //   }
+        //   if(count>num){
+        //   num = count;
+        //   element = arr[i];
+
+        //   }
+         
+        // } document.write("most frequent element:"+ element);
+        //   document.write("<br>"+"frequency"+num);
+
+        let arr = [6,7,4,5,6,8,4,4];
+        let arr1 = [];
+        for(let i=0;i<arr.length;i++){
+          for(let j=i+1;j<arr.length;j++){
+            if(arr[i]==arr[j] && !arr1.includes(arr[i])){
+             arr1.push(arr[i])
+             break
+            }
+          }
+        }
+       document.write(arr1)
+    </script>
+</body>
+</html>
